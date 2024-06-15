@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; /* Distribuir los elementos de manera uniforme */
+}
+
+header a:hover {
+	opacity: 60%;
+	text-decoration: underline;
+
+}

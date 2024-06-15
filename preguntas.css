@@ -1,0 +1,177 @@
+
+.header {
+  overflow: hidden;
+   background-image: linear-gradient(white, lightgrey);
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: #045FB4;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 5px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: -30px 0px -15px 500px;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  font-weight: bolder;
+  opacity: 80%;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+  margin: 0px 460px 0px 0px; /*arriba,derecha, abajo, izquierda*/
+}
+
+.header-right a {
+	margin-right: 80px;
+	 border-right: 3px solid #045FB4;
+	 border-left: 3px solid #045FB4; 
+  padding-right: 10px; 
+  background-color: #045FB4, 30%;
+}
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+h1{
+  margin: 50px 0px 35px 0px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: auto;
+}
+
+.pregunta {
+  margin: 10px;
+  max-width: 1000px;
+  padding: 1rem;
+  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, .1);
+  font-family: Lora;
+  cursor: pointer;
+}
+
+.pregunta_encabezado p {
+  font-size: 1.25rem;
+  margin: 3px;
+  
+}
+
+.respuesta {
+  height: 1px;
+  opacity: 0;
+  font-family: Lora;
+  font-style: italic;
+}
+
+.respuesta.activo {
+  height: auto;
+  opacity: 1;
+  margin: 10px;
+}
+
+.info{
+  font-size: 25px;
+}
+.btn {
+ background: linear-gradient(#0174DF, #084B8A);
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 0px 0px -10px 0px;
+  font-size: 20px;
+  font-family: Lora;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer {
+  background: #16222A;
+  background: linear-gradient(#F2F2F2, #D8D8D8);
+  color: black;
+  margin-top:100px;
+  text-decoration: none;
+  font-family: Lora;
+}
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+  text-decoration: none;
+}
+.contenedor{
+   display: flex;
+   justify-content: space-between;
+   padding: 10px;
+}
+footer a:hover {
+  color: #FA944B;
+}
+.contacto{
+  padding: 10px;
+  text-align: right;
+  padding: 20px 500px 10px 10px;
+  line-height: 20px;
+  margin: 0px 0px 0px 0px;
+}
+.redes{
+  padding: 10px 0px 0px 570px;
+  margin: -80px 0px 0px 0px;
+  
+}
+.logofoot{
+  opacity: 70%;
+  margin: 20px 0px 0px 300px;
+  margin-right: 200px;
+}
+.derechos{
+  background-image: linear-gradient(white, lightgrey);
+  padding: 5px;
+  font-size: 15px;
+}
+.informacion{
+  margin: 10px 0px 0px 0px;
+}

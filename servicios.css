@@ -1,0 +1,187 @@
+
+.header {
+  overflow: hidden;
+   background-image: linear-gradient(white, lightgrey);
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: #045FB4;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 5px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: -30px 0px -15px 500px;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  font-weight: bolder;
+  opacity: 80%;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+  margin: 0px 460px 0px 0px; /*arriba,derecha, abajo, izquierda*/
+}
+
+.header-right a {
+	margin-right: 80px;
+	 border-right: 3px solid #045FB4;
+	 border-left: 3px solid #045FB4; 
+  padding-right: 10px; 
+  background-color: #045FB4, 30%;
+}
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("photographer.jpg");
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -66%);
+  z-index: 2;
+  width: 93%;
+  padding: 155px 37px 155px 80px;
+  text-align: right;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0px 50px 0px 0px;
+}
+
+.beneficios{
+  display: flex;
+  margin: 0px 350px 0px 350px;
+}
+
+.beneficiostit{
+  font-size: 25px;
+}
+
+.seguridad{
+  display: flex;
+  margin: 0px 350px 0px 350px;
+}
+
+.seguridadtit{
+  font-size: 25px;
+}
+.seguridadimg{
+  margin: 90px 0px 0px 0px;
+  padding: 15px;
+}
+.ventajas{
+  display: flex;
+  margin: 0px 350px 0px 350px;
+}
+
+.ventajastit{
+  font-size: 25px;
+}
+
+.tit{
+  font-weight: bold;
+  margin: 0px 0px -20px 0px;
+}
+
+.mapa{
+box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, .1);
+  border-radius: 15px;
+  margin: 70px 400px 0px 400px;
+  font-size: 20px;
+  font-family: Lora;
+  padding: 40px;
+}
+
+footer {
+  background: #16222A;
+  background: linear-gradient(#F2F2F2, #D8D8D8);
+  color: black;
+  margin-top:100px;
+  text-decoration: none;
+  font-family: Lora;
+}
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+  text-decoration: none;
+}
+.contenedor{
+   display: flex;
+   justify-content: space-between;
+   padding: 10px;
+}
+footer a:hover {
+  color: #FA944B;
+}
+.contacto{
+  padding: 10px;
+  text-align: right;
+  padding: 20px 500px 10px 10px;
+  line-height: 20px;
+  margin: 0px 0px 0px 0px;
+}
+.redes{
+  padding: 10px 0px 0px 570px;
+  margin: -80px 0px 0px 0px;
+  
+}
+.logofoot{
+  opacity: 70%;
+  margin: 20px 0px 0px 300px;
+  margin-right: 200px;
+}
+.derechos{
+  background-image: linear-gradient(white, lightgrey);
+  padding: 5px;
+  font-size: 15px;
+}
+.informacion{
+  margin: 10px 0px 0px 0px;
+}
